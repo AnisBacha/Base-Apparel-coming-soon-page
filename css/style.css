@@ -135,17 +135,27 @@ body{
     .main__logo{
         max-width: 160px;
         max-height: 38px;
+        margin: 0;
     }
     .main__h1{
         font-size: 4.5rem;
-        margin-block: 8.5625rem 2.625rem;
+        margin-block: 7rem 2.625rem;
+        padding-inline: 0;
     }
     .main__p{
-        font-size: 1.0625rem;
+        font-size: .825rem;
+
         margin-block-end: 3rem;
     }
     .main__arrow{
         padding-inline: 2rem;
         right: 0px;
+    }
+    .main__logo, 
+    .main__h1,
+    .main__p,
+    .input-container{
+        padding-inline: 0;
+
     }
 }
