@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(145deg, hsl(0, 0%, 100%), sl(0, 100%, 98%)) ;
+    font-family: "Josefin Sans";
+
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+.main__heroD{
+    display: none;
+}
+.main__heroM{
+    display: block;
+    width: 100%;
+}
+.main__content{
+    text-align: center;
+    max-width: 450px;
+
+}
+
+ .main__logo  {
+    display: block;
+    text-align : left ; 
+    margin: 2rem;
+    max-width: 100px;
+    max-height: 30px;
+}
+
+.main__h1{
+    color: hsl(0, 6%, 24%);
+    font-size: 2.75rem;
+    letter-spacing: .35ch;
+    font-weight: 600;
+    line-height: 1;
+    margin-block: 3.875rem 1.625rem;
+    padding-inline: 2.5rem;
+
+}
+.main__h1 span{
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+}
+
+.main__p{
+    color: hsl(0, 36%, 70%);
+    font-size: .825rem;
+    line-height: 1.3;
+    margin-block-end: 2.375rem;
+    padding-inline: 2.5rem;
+    
+}
+
+.input-container{
+    margin-block-end: 2rem;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding-inline: 2.5rem;
+
+    position: relative;
+}
+.main__input{
+    padding: 1rem 1.5rem;
+    border-radius: 30px;
+    border: 1px solid hsl(0, 36%, 70%);
+    width: 100%;
+}
+.main__arrow{
+    background-image: linear-gradient(145deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%)) ;
+    padding: 1rem 1.5rem;
+    border-radius: 25px;
+
+    position: absolute;
+    right: 20px;
+    top: 0;
+}
+.main__input::placeholder{
+    color: hsla(0, 36%, 70%, 0.555);
+}
+.main__error-msg{
+    display: none;
+
+    color: hsl(0, 93%, 68%);
+    font-size: .825rem;
+    margin: .75rem 1.5rem;
+}
+.main__error-icon{
+    display: none;
+    
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 100px;
+    top: 12px;
+}
+
+@media screen and (min-width: 1024px) {
+    .main__heroM{
+        display: none;
+    }
+    .main__heroD{
+        display: block;
+        grid-column: 2/3;
+        max-width: 610px;
+    }
+    .main{
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        place-items: center;
+        
+    }
+
+    .main__content{
+        
+        min-height: 580px;
+        text-align: start;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+
+        grid-row: 1/2;
+    }
+    .main__logo{
+        max-width: 160px;
+        max-height: 38px;
+    }
+    .main__h1{
+        font-size: 4.5rem;
+        margin-block: 8.5625rem 2.625rem;
+    }
+    .main__p{
+        font-size: 1.0625rem;
+        margin-block-end: 3rem;
+    }
+    .main__arrow{
+        padding-inline: 2rem;
+        right: 0px;
+    }
+}
